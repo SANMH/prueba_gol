@@ -4,7 +4,7 @@ Created on Thu May 17 09:27:54 2018
 
 @author: ESFOT
 """
-
+#import vlc
 import time
 from tkinter import *
 
@@ -34,6 +34,11 @@ def moverkame1(event):
     canvas.move (3, -10, 0)
     # primer numero es la imagen , segundo es la velocidad de desplazamiento, tercero es el angulo de inclinacion
     print("se marco un gol")
+    #la musica esta comentada porque no me dejana correr el programa
+    #p = vlc.MediaPlayer("sweet dreams.mp3") 
+    #p.play()
+    #p.stop()
+    
 canvas.bind_all("<KeyPress-Left>", moverkame1)
 
 
